@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router';
 
 export function Navigation() {
   const [scrolled, setScrolled] = useState(false);
@@ -19,16 +20,16 @@ export function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <span className="text-xl font-bold tracking-tight" style={{ fontFamily: 'var(--font-display)' }}>
+          <Link to="/" className="text-xl font-bold tracking-tight" style={{ fontFamily: 'var(--font-display)' }}>
             SHYAAR
-          </span>
+          </Link>
           <span className="w-0.5 h-4 bg-[#00E5FF] animate-pulse"></span>
         </div>
 
         <div className="hidden md:flex items-center gap-8" style={{ fontFamily: 'var(--font-body)' }}>
-          <a href="#work" className="text-[#ECEEF4] hover:text-[#00E5FF] transition-colors">
+          <Link to="/works" className="text-[#ECEEF4] hover:text-[#00E5FF] transition-colors">
             Work
-          </a>
+          </Link>
           <a href="#about" className="text-[#ECEEF4] hover:text-[#00FFA3] transition-colors">
             About
           </a>

@@ -36,7 +36,7 @@ const stack = [
     category: 'Blockchain',
     color: '#9D7BFF',
     tools: [
-      { name: 'Solana', icon: Blocks },
+      { name: 'Anchor', icon: Blocks },
       { name: 'Solidity', icon: Lock },
       { name: 'Rust', icon: Code },
       { name: 'Web3 Wallets', icon: Wallet },

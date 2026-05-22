@@ -1,3 +1,4 @@
+import { Routes, Route } from 'react-router';
 import { Navigation } from './components/Navigation';
 import { Hero } from './components/Hero';
 import { ThreePillars } from './components/ThreePillars';
@@ -7,8 +8,9 @@ import { Stack } from './components/Stack';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { CircuitLine } from './components/CircuitLine';
+import { WorksPage } from './pages/WorksPage';
 
-export default function App() {
+function HomePage() {
   return (
     <div className="min-h-screen bg-[#060608] relative overflow-x-hidden">
       {/* Noise grain overlay */}
@@ -59,5 +61,14 @@ export default function App() {
       <Contact />
       <Footer />
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/works" element={<WorksPage />} />
+    </Routes>
   );
 }

@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 export function Footer() {
   return (
     <footer className="border-t border-[#1E2030] relative overflow-hidden">
@@ -8,12 +10,13 @@ export function Footer() {
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-8 flex flex-col md:flex-row justify-between items-center gap-4">
         <div className="flex items-center gap-2">
-          <span
+          <Link
+            to="/"
             className="text-lg font-bold text-[#ECEEF4]"
             style={{ fontFamily: 'var(--font-display)' }}
           >
             SHYAAR
-          </span>
+          </Link>
           <span className="text-[#525870]" style={{ fontFamily: 'var(--font-body)' }}>
             © 2025
           </span>

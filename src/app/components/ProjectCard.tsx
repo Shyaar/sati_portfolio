@@ -8,9 +8,11 @@ interface ProjectCardProps {
   tags: Array<{ label: string; color: string }>;
   imageUrl: string;
   featured?: boolean;
+  link?: string;
+  linkLabel?: string;
 }
 
-export function ProjectCard({ title, description, tags, imageUrl, featured = false }: ProjectCardProps) {
+export function ProjectCard({ title, description, tags, imageUrl, featured = false, link, linkLabel }: ProjectCardProps) {
   return (
     <motion.div
       whileHover={{ y: -8 }}
@@ -40,7 +42,7 @@ export function ProjectCard({ title, description, tags, imageUrl, featured = fal
           </p>
 
           {/* Tags */}
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 mb-5">
             {tags.map((tag) => (
               <span
                 key={tag.label}
@@ -56,6 +58,27 @@ export function ProjectCard({ title, description, tags, imageUrl, featured = fal
               </span>
             ))}
           </div>
+
+          {/* CTA link */}
+          {link && linkLabel && (
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 hover:gap-3"
+              style={{
+                fontFamily: 'var(--font-mono)',
+                backgroundColor: `${tags[0]?.color}15`,
+                color: tags[0]?.color,
+                border: `1px solid ${tags[0]?.color}40`,
+              }}
+            >
+              {linkLabel}
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 12L12 2M12 2H5M12 2V9" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </a>
+          )}
         </div>
 
         {/* Hover overlay */}
