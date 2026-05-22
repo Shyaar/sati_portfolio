@@ -39,8 +39,8 @@ export function ThreePillars() {
         }}
       ></div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
-        <div className="grid md:grid-cols-3 gap-6">
+      <div className=" mx-auto relative z-10">
+        <div className="grid md:grid-cols-3 gap-24 p-24">
           {pillars.map((pillar, index) => (
             <motion.div
               key={pillar.title}
@@ -56,7 +56,7 @@ export function ThreePillars() {
                 className="relative bg-[#13141C]/70 backdrop-blur-xl rounded-xl p-8 border-t-2 transition-all duration-300"
                 style={{
                   borderTopColor: pillar.color,
-                  boxShadow: `0 0 40px ${pillar.glowColor}`,
+                  boxShadow: `0 0 20px ${pillar.glowColor}`,
                 }}
               >
                 {/* Icon */}

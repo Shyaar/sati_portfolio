@@ -14,7 +14,7 @@ export function ProjectCard({ title, description, tags, imageUrl, featured = fal
   return (
     <motion.div
       whileHover={{ y: -8 }}
-      className={`group relative ${featured ? 'md:col-span-2' : ''}`}
+      className="group relative"
     >
       <div className="relative bg-[#13141C]/70 backdrop-blur-xl rounded-xl overflow-hidden border border-[#1E2030] hover:border-[#00E5FF]/50 transition-all duration-300">
         {/* Image */}

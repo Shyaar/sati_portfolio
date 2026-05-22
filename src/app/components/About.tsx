@@ -39,14 +39,13 @@ export function About() {
             className="flex justify-center"
           >
             <div className="relative">
-              <div className="w-64 h-64 rounded-2xl bg-gradient-to-br from-[#00E5FF] via-[#00FFA3] to-[#9D7BFF] p-1">
-                <div className="w-full h-full rounded-2xl bg-[#13141C] flex items-center justify-center">
-                  <span
-                    className="text-6xl font-bold text-[#ECEEF4]"
-                    style={{ fontFamily: 'var(--font-display)' }}
-                  >
-                    S
-                  </span>
+              <div className="w-96 h-[28rem] rounded-2xl bg-gradient-to-br from-[#00E5FF] via-[#00FFA3] to-[#9D7BFF] p-1">
+                <div className="w-full h-full rounded-2xl overflow-hidden">
+                  <img
+                    src="/profile.jpg"
+                    alt="Shyaar"
+                    className="w-full h-full object-cover object-top"
+                  />
                 </div>
               </div>
               {/* Floating orbs */}

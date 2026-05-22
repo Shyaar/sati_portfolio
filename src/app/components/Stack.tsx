@@ -98,7 +98,7 @@ export function Stack() {
                     <div
                       className="w-10 h-10 rounded-lg flex items-center justify-center transition-all duration-300"
                       style={{
-                        backgroundColor: '#ECEEF4',
+                        backgroundColor: '#000000',
                       }}
                     >
                       <tool.icon
