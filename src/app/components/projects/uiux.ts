@@ -3,48 +3,48 @@ import type { ProjectCard } from '../ProjectCard';
 
 export const uiuxProjects: ComponentProps<typeof ProjectCard>[] = [
   {
-    title: 'NFT Marketplace',
-    description: 'Modern marketplace design with advanced filtering, discovery flows, and full design system.',
+    title: 'Pyde — Layer 1 Blockchain Identity',
+    description: 'Brand identity design for a post-quantum Layer 1 blockchain. Covers logo mark, symbol rationale, and visual language for a protocol built on four uncompromising commitments.',
     tags: [
       { label: 'UI/UX', color: '#00E5FF' },
       { label: 'Figma', color: '#00E5FF' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1777503810475-54815aae2cb4?w=1080',
+    imageUrl: '/project-pics/pyde.png',
     featured: true,
-    link: 'https://www.behance.net/',  // replace with your Behance project URL
+    link: 'https://www.behance.net/gallery/249867091/Pyde',  // replace with your Behance project URL
     linkLabel: 'View on Behance',
   },
   {
-    title: 'Design System',
-    description: 'Comprehensive component library for Web3 applications — tokens, patterns, and documentation.',
+     title: 'BSEMA — Emergency Management',
+    description: 'Full UI/UX design for the Benue State Emergency Management Agency — live alert system, AI chatbot interface, incident map, and citizen communication portal built for Nigeria\'s frontline disaster response authority.',
     tags: [
       { label: 'UI/UX', color: '#00E5FF' },
       { label: 'Figma', color: '#00E5FF' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1772272935464-2e90d8218987?w=1080',
-    link: 'https://www.behance.net/',  // replace with your Behance project URL
+    imageUrl: '/project-pics/bsema.png',
+    link: 'https://www.behance.net/gallery/249865573/BSema',
     linkLabel: 'View on Behance',
   },
   {
-    title: 'Protocol Dashboard',
-    description: 'Real-time DeFi analytics interface — designed from wireframes to high-fidelity prototype.',
+    title: 'Luxury Hotels',
+    description: 'High-end hotel website design featuring a landing page and admin dashboard. Built around elegant visual hierarchy, refined typography, and a premium user experience.',
     tags: [
       { label: 'UI/UX', color: '#00E5FF' },
       { label: 'Figma', color: '#00E5FF' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1771923082503-0a3381c46cef?w=1080',
-    link: 'https://www.behance.net/',  // replace with your Behance project URL
+    imageUrl: '/project-pics/luxury.png',
+    link: 'https://www.behance.net/gallery/243656949/Luxury-Hotels',  // replace with your Behance project URL
     linkLabel: 'View on Behance',
   },
     {
-    title: 'Protocol Dashboard',
-    description: 'Real-time DeFi analytics interface — designed from wireframes to high-fidelity prototype.',
+    title: 'Agrisphere',
+    description: 'Mobile app design for an agriculture platform. Covers end-to-end product design including user flows, interaction design, and a clean UI system built for farmers and agri-businesses.',
     tags: [
       { label: 'UI/UX', color: '#00E5FF' },
       { label: 'Figma', color: '#00E5FF' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1771923082503-0a3381c46cef?w=1080',
-    link: 'https://www.behance.net/',  // replace with your Behance project URL
+    imageUrl: '/project-pics/agrisphere.png',
+    link: 'https://www.behance.net/gallery/192047635/Agrisphere',  // replace with your Behance project URL
     linkLabel: 'View on Behance',
   },
 ];
