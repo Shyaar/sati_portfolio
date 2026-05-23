@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router';
+import { Analytics } from '@vercel/analytics/react';
 import { Navigation } from './components/Navigation';
 import { Hero } from './components/Hero';
 import { ThreePillars } from './components/ThreePillars';
@@ -67,9 +68,12 @@ function HomePage() {
 
 export default function App() {
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/works" element={<WorksPage />} />
-    </Routes>
+    <>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/works" element={<WorksPage />} />
+      </Routes>
+      <Analytics />
+    </>
   );
 }
