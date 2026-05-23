@@ -5,6 +5,7 @@ import { ThreePillars } from './components/ThreePillars';
 import { Work } from './components/Work';
 import { About } from './components/About';
 import { Stack } from './components/Stack';
+import { Testimonials } from './components/Testimonials';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { CircuitLine } from './components/CircuitLine';
@@ -31,6 +32,7 @@ function HomePage() {
       <About />
       <CircuitLine color="#00E5FF" />
       <Stack />
+      <Testimonials />
 
       {/* Teaching strip */}
       <section className="py-12 px-6 lg:px-8 border-y border-[#1E2030] bg-[#0C0D12]/50 relative">
