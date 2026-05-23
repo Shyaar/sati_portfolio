@@ -1,8 +1,12 @@
 import { Link } from "react-router";
+import { Contact } from "./Contact";
+
 
 export function Footer() {
   return (
+
     <footer className="border-t border-[#1E2030] relative overflow-hidden">
+      <Contact />
       {/* Animated gradient border */}
       <div className="absolute top-0 left-0 right-0 h-[2px] overflow-hidden">
         <div className="w-full h-full animate-gradient-x bg-gradient-to-r from-[#00E5FF] via-[#00FFA3] via-[#9D7BFF] to-[#00E5FF] bg-[length:200%_100%]"></div>
