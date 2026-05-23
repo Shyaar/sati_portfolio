@@ -5,6 +5,7 @@ import { ProjectCard } from '../components/ProjectCard';
 import { uiuxProjects } from '../components/projects/uiux';
 import { frontendProjects } from '../components/projects/frontend';
 import { blockchainProjects } from '../components/projects/blockchain';
+import { Footer } from '../components/Footer';
 
 type Category = 'UI/UX' | 'Frontend' | 'Blockchain';
 
@@ -115,6 +116,8 @@ export function WorksPage() {
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }

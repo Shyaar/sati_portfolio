@@ -3,27 +3,49 @@ import type { ProjectCard } from '../ProjectCard';
 
 export const frontendProjects: ComponentProps<typeof ProjectCard>[] = [
   {
-    title: 'Beam Wallet',
-    description: 'Full-stack Web3 wallet with seamless UX, on-chain integration, and responsive layout.',
+    title: 'ShwanDmall — E-Commerce',
+    description: 'Full-featured e-commerce store with product browsing, wishlist, cart, flash sales, and countdown deals. Built with React, Tailwind, and React Router.',
     tags: [
       { label: 'React', color: '#00FFA3' },
-      { label: 'TypeScript', color: '#00FFA3' },
-      { label: 'Web3', color: '#9D7BFF' },
+      { label: 'Tailwind', color: '#00FFA3' },
+      { label: 'React Router', color: '#00FFA3' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1771922748624-b205cf5d002d?w=1080',
+    imageUrl: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1080',
     featured: true,
-    link: 'https://',  // replace with your live site URL
+    link: 'https://shwandmall.vercel.app',
     linkLabel: 'Visit Website',
   },
   {
-    title: 'Protocol Dashboard',
-    description: 'Real-time DeFi analytics and portfolio management built with React and live on-chain data.',
+    title: 'BFL Messenger',
+    description: 'Real-time messaging UI with contact list, chat bubbles, and mobile-first responsive layout. Built with HTML and Tailwind CSS.',
+    tags: [
+      { label: 'HTML', color: '#00FFA3' },
+      { label: 'Tailwind', color: '#00FFA3' },
+    ],
+    imageUrl: 'https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=1080',
+    link: 'https://bfl-messenger.vercel.app',
+    linkLabel: 'Visit Website',
+  },
+  {
+    title: 'eNno — Agency Landing Page',
+    description: 'Corporate agency landing page with hero, services grid, about section, metrics strip, and contact. Built with HTML and Tailwind CSS.',
+    tags: [
+      { label: 'HTML', color: '#00FFA3' },
+      { label: 'Tailwind', color: '#00FFA3' },
+    ],
+    imageUrl: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1080',
+    link: 'https://enon-landingpage.vercel.app',
+    linkLabel: 'Visit Website',
+  },
+  {
+    title: 'Woodmart — Building Materials',
+    description: 'Building materials e-commerce with popular category grid, featured products via Fake Store API, and a cart sidebar. Built with React and Tailwind.',
     tags: [
       { label: 'React', color: '#00FFA3' },
       { label: 'Tailwind', color: '#00FFA3' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1771923082503-0a3381c46cef?w=1080',
-    link: 'https://',  // replace with your live site URL
+    imageUrl: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1080',
+    link: 'https://woodmart-bfl.vercel.app',
     linkLabel: 'Visit Website',
   },
 ];

@@ -61,6 +61,7 @@ function HomePage() {
       <Contact />
       <Footer />
     </div>
+    
   );
 }
 
