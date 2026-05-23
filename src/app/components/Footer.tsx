@@ -18,7 +18,7 @@ export function Footer() {
             SHYAAR
           </Link>
           <span className="text-[#525870]" style={{ fontFamily: 'var(--font-body)' }}>
-            © 2025
+            © 2026
           </span>
         </div>
 
